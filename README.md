@@ -1,78 +1,112 @@
-# AutoLabor Compliance Agent
+# 🤖 AutoLabor Compliance Agent
 
-AutoLabor Compliance Agent is an AI-powered tool designed to automate labor compliance auditing for companies. It uses a sophisticated orchestration pipeline to gather, analyze, and report on compliance data in real-time.
+**AutoLabor Compliance Agent** is an enterprise-grade AI auditor designed to automate labor compliance monitoring for large conglomerates. It leverages Gemini 2.0 Flash's 1M+ context window to perform forensic audits of Annual Reports, BRSR (Business Responsibility and Sustainability Reports), and financial statements in real-time.
 
-## 🚀 Features
+---
 
-- **Real-time Auditing:** Professional compliance audits with real-time updates via WebSockets.
-- **AI Orchestration:** A robust pipeline that manages data ingestion, structuring, and analysis.
-- **Web Hunter:** Automated web scraping and data gathering for target companies.
-- **Comprehensive Reporting:** Generates structured JSON and professional PDF reports.
-- **Interactive Dashboard:** Modern React-based frontend for visualizing compliance data and sector analysis.
-- **Comparison Engine:** Compare compliance reports across multiple companies.
+## 🏗️ System Architecture
 
-## 🛠️ Tech Stack
+The system is built on a modular "Orchestration" protocol that bridges deep web search, forensic document analysis, and real-time visualization.
 
-### Backend
-- **Framework:** FastAPI
-- **Real-time:** WebSockets
-- **Concurrency:** Threading and Asyncio
-- **Data Processing:** Pydantic, JSON processing
-- **Server:** Uvicorn
+```mermaid
+graph TD
+    User((User)) -->|Input: Company Name| Frontend[React Dashboard]
+    Frontend -->|WebSocket| Backend[FastAPI Server]
+    Backend --> Orchestrator[Compliance Orchestrator]
+    
+    subgraph Data Hunting
+        Orchestrator --> Hunter[Web Hunter]
+        Hunter -->|Nuclear Query| Google[Search Engine]
+        Google -->|PDFs| Gatekeeper[Semantic Gatekeeper]
+    end
+    
+    subgraph Forensic Analysis
+        Gatekeeper --> Parser[PDF Parser]
+        Parser --> Engine[Audit Engine: Gemini 2.0 Flash]
+        Engine -->|Cross-Validation| Financials[External Financial API]
+    end
+    
+    subgraph Reporting
+        Engine --> PDFGen[ReportLab PDF Engine]
+        Engine --> JSON[Structured JSON]
+        PDFGen --> User
+    end
+    
+    Orchestrator -->|Real-time Updates| Frontend
+```
 
-### Frontend
-- **Framework:** React + Vite
-- **Styling:** CSS (Modern, Glassmorphism design)
-- **State Management:** React Context API
-- **Visuals:** Framer Motion / Custom CSS effects
+---
 
-### Infrastructure
-- **Containerization:** Docker & Docker Compose
+## 🛠️ Core Technology Stack
 
-## 📦 Setup & Installation
+### Backend (The "SANE-AI" Core)
+- **FastAPI:** High-performance async API framework.
+- **Gemini 2.0 Flash:** Used for "Monolithic Protocol" analysis, allowing the system to ingest thousands of pages of text in a single pass for cross-document validation.
+- **WebHunter & Nuclear Search:** Customized scraping logic that optimizes search queries to bypass "subsidiary drift" (e.g., distinguishing between Mahindra & Mahindra parent vs. Mahindra Finance).
+- **ReportLab:** A low-level PDF generation engine used to build professional, corporate-ready compliance reports with dynamic tables and risk badges.
+- **WebSocket Protocol:** Ensures sub-second feedback loops between the AI pipeline and the user interface.
 
-### Prerequisites
-- Python 3.9+
-- Node.js & npm
-- Docker (optional)
+### Frontend (The Dashboard)
+- **React + Vite:** Modern, fast, and responsive UI foundations.
+- **Glassmorphism Design:** A premium, state-of-the-art interface utilizing HSL-tailored colors and smooth backdrop blurs.
+- **Context API:** Manages global state for real-time audit progress and multi-company comparisons.
+- **Framer Motion:** Implements subtle micro-animations for an interactive user experience.
 
-### Backend Setup
-1. Navigate to the `auto-labor-compliance-agent` directory.
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Run the backend server:
-   ```bash
-   python main.py
-   ```
+---
 
-### Frontend Setup
-1. Navigate to the `frontend` directory.
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Run the development server:
-   ```bash
-   npm run dev
-   ```
+## 🔍 Key Project Components
 
-### Docker Setup
-To run the entire stack using Docker:
+### 1. The Semantic Gatekeeper
+A critical component in the `ComplianceOrchestrator` that uses "Nuclear Disambiguation" to ensure that the documents gathered belong *strictly* to the parent OEM. It filters out joint ventures, finance subsidiaries, and other "poison entities" that often contaminate corporate compliance datasets.
+
+### 2. Forensic Cross-Validation
+Unlike standard RAG systems, AutoLabor patches missing data in PDF reports with real-time external financial APIs (e.g., fetching actual EBITDA or Revenue if not clearly stated in the text).
+
+### 3. Sector Analysis Engine
+Aggregates compliance data across companies to provide an "Overall Risk Score" (Low, Moderate, High) and strategic recommendations for supply chain liability management.
+
+---
+
+## 📦 Detailed Setup & Deployment
+
+### 1. Prerequisites
+- **Python 3.10+**
+- **Node.js 18+**
+- **Google Cloud API Key** (for Gemini AI)
+
+### 2. Backend Installation
+```bash
+cd auto-labor-compliance-agent
+python -m venv venv
+source venv/bin/activate  # or venv\Scripts\activate on Windows
+pip install -r requirements.txt
+python main.py
+```
+
+### 3. Frontend Installation
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+### 4. Docker Deployment
+The project includes a multi-stage `docker-compose.yml` that handles both the React frontend and FastAPI backend in isolated containers.
 ```bash
 docker-compose up --build
 ```
 
-## 🛠️ Usage
+---
 
-1. Open the frontend application in your browser (usually `http://localhost:5173`).
-2. Enter the company name you wish to audit.
-3. Monitor the real-time progress of the compliance check.
-4. View and download the generated compliance report.
+## 📑 API Documentation
 
-## 📄 License
-[Specify License, e.g., MIT]
+- **`WS /ws/audit`**: Primary real-time endpoint for triggering new audits.
+- **`GET /api/reports`**: List all consolidated compliance reports.
+- **`GET /api/download_report?company={name}`**: Download the professional PDF audit.
+- **`POST /api/compare`**: Submit multiple company names for a side-by-side gap analysis.
 
 ---
-Developed by [Your Name/Organization]
+
+## 🛡️ License & Contact
+Developed as part of the **AutoLabor Compliance** initiative. 
+For support or collaboration, please visit the [GitHub Repository](https://github.com/sanskrutipasalkar10/auto-labor-compliance-agent).
