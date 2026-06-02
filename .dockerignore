@@ -1,0 +1,16 @@
+.git
+.gitignore
+.env
+.env.example
+.ssh
+venv
+node_modules
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.db
+frontend/
+deploy.md
+docker-compose.yml
+Dockerfile

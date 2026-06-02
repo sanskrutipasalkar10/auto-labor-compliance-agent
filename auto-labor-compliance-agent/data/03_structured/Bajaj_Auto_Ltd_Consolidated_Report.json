@@ -1,0 +1,178 @@
+{
+  "company_name": "Bajaj Auto Ltd",
+  "report_period": "FY2024-25",
+  "overall_risk_score": "Medium",
+  "executive_summary": {
+    "overview": "Bajaj Auto Ltd. demonstrates a commitment to ethical conduct and employee well-being, as evidenced by its comprehensive policies and initiatives. However, there are areas of potential risk, particularly in supply chain compliance and gender representation in leadership roles.",
+    "key_finding": "While Bajaj Auto has robust policies and practices for employee well-being and ethical conduct, there is a need for greater transparency and monitoring of human rights and environmental practices within its value chain partners."
+  },
+  "labor_code_analysis": {
+    "wages": {
+      "minimum_wage_status": {
+        "status": "Compliant",
+        "evidence_snippet": "Permanent Employees | 8.6% | 22.9% | 9.4%",
+        "metric_value": "9.4%",
+        "source_ref": "[Source: Bajaj_Auto_Ltd_BRSR_Report.pdf, Page 5]"
+      },
+      "equal_pay_status": {
+        "status": "Risk Identified",
+        "evidence_snippet": "Median remuneration | 3 | 988 | 28 | 9",
+        "metric_value": "28",
+        "source_ref": "[Source: Bajaj_Auto_Ltd_BRSR_Report.pdf, Page 5]"
+      },
+      "profit_sharing_status": {
+        "status": "N/A",
+        "evidence_snippet": "NA",
+        "metric_value": null,
+        "source_ref": "N/A"
+      }
+    },
+    "osh": {
+      "safety_systems_status": {
+        "status": "Compliant",
+        "evidence_snippet": "All our plants are certified with ISO 45001:2018 by M/S Bureau Veritas.",
+        "metric_value": "ISO 45001:2018",
+        "source_ref": "[Source: Bajaj_Auto_Ltd_BRSR_Report.pdf, Page 4]"
+      },
+      "accident_records_status": {
+        "status": "Compliant",
+        "evidence_snippet": "Lost Time Injury Frequency Rate (LTIFR) (per one million-person hours worked) | Workers | 0.08",
+        "metric_value": "0.08",
+        "source_ref": "[Source: Bajaj_Auto_Ltd_BRSR_Report.pdf, Page 4]"
+      },
+      "audit_scores_status": {
+        "status": "Positive",
+        "evidence_snippet": "We have implemented several proactive measures to ensure workplace safety.",
+        "metric_value": null,
+        "source_ref": "[Source: Bajaj_Auto_Ltd_BRSR_Report.pdf, Page 4]"
+      }
+    },
+    "ir": {
+      "unionization_status": {
+        "status": "Risk Identified",
+        "evidence_snippet": "2,830 | 2,058 | 73%",
+        "metric_value": "73%",
+        "source_ref": "[Source: Bajaj_Auto_Ltd_BRSR_Report.pdf, Page 3]"
+      },
+      "collective_bargaining_status": {
+        "status": "Positive",
+        "evidence_snippet": "This is exemplified by the timely signing of the Long-Term Wage Settlement at the Waluj plant.",
+        "metric_value": null,
+        "source_ref": "[Source: Bajaj_Auto_Ltd_BRSR_Report.pdf, Page 3]"
+      },
+      "disputes_strikes_status": {
+        "status": "Compliant",
+        "evidence_snippet": "achieved lasting industrial harmony.",
+        "metric_value": null,
+        "source_ref": "[Source: Bajaj_Auto_Ltd_BRSR_Report.pdf, Page 3]"
+      }
+    },
+    "social_security": {
+      "leave_policy_status": {
+        "status": "Compliant",
+        "evidence_snippet": "Privilege leave entitlements are recognised as a liability, in the calendar year of rendering of service, as per the rules of the Company.",
+        "metric_value": null,
+        "source_ref": "[Source: Bajaj_Auto_Ltd_BRSR_Report.pdf, Page 2]"
+      },
+      "retirement_benefits_status": {
+        "status": "Compliant",
+        "evidence_snippet": "Payment for present liability of future payment of gratuity is being made to approved gratuity fund",
+        "metric_value": null,
+        "source_ref": "[Source: Bajaj_Auto_Ltd_BRSR_Report.pdf, Page 2]"
+      },
+      "healthcare_welfare_status": {
+        "status": "Compliant",
+        "evidence_snippet": "employees have access to state-of-the-art health and sports facilities.",
+        "metric_value": null,
+        "source_ref": "[Source: Bajaj_Auto_Ltd_BRSR_Report.pdf, Page 3]"
+      }
+    }
+  },
+  "supply_chain_compliance": {
+    "due_diligence": {
+      "status": "Compliant",
+      "evidence_snippet": "We have a well-defined methodology, practices, and Supplier Code of Conduct (SCoC) to engage with all our suppliers in an ethical, responsible, fair, transparent, legal, and sustainable way.",
+      "metric_value": null,
+      "source_ref": "[Source: Bajaj_Auto_Ltd_BRSR_Report.pdf, Page 2]"
+    },
+    "forced_labor_policies": {
+      "status": "Compliant",
+      "evidence_snippet": "human rights are an essential part of supplier code of conduct.",
+      "metric_value": null,
+      "source_ref": "[Source: Bajaj_Auto_Ltd_BRSR_Report.pdf, Page 5]"
+    },
+    "conflict_minerals": {
+      "status": "N/A",
+      "evidence_snippet": "NA",
+      "metric_value": null,
+      "source_ref": "N/A"
+    },
+    "principal_employer_liability": "The company has a grievance redressal mechanism for workers, including contract workers, and ensures compliance with labour laws by its value chain partners."
+  },
+  "business_impact": {
+    "operational_efficiency": "Employee engagement and skill development initiatives contribute to a positive work environment and improved productivity.",
+    "financial_performance": "Investment in R&D and sustainable practices can lead to cost savings and enhanced financial performance.",
+    "brand_reputation": "Ethical conduct and social responsibility enhance brand reputation and stakeholder trust.",
+    "innovation_rnd": "A diverse and skilled workforce fosters innovation and supports R&D efforts."
+  },
+  "strategic_plan": {
+    "recommendations": [
+      "Enhance monitoring and reporting of human rights and environmental practices within the supply chain.",
+      "Increase female representation in leadership positions to promote gender diversity.",
+      "Strengthen engagement with value chain partners to ensure compliance with ethical and sustainability standards.",
+      "Continue investing in employee well-being and skill development programs to foster a positive and productive work environment."
+    ]
+  },
+  "workforce_profile": [
+    {
+      "category": "Permanent Employees",
+      "total_count": "2,639",
+      "male_count": "2,498",
+      "female_count": "N/A",
+      "turnover_rate": "9.4%"
+    },
+    {
+      "category": "Permanent Workers",
+      "total_count": "3,082",
+      "male_count": "2,830",
+      "female_count": "N/A",
+      "turnover_rate": "2.7%"
+    }
+  ],
+  "supply_chain_profile": [
+    {
+      "vendor_name": "Various",
+      "relationship": "Suppliers",
+      "compliance_status": "Compliant",
+      "key_metrics": "Adherence to Supplier Code of Conduct"
+    }
+  ],
+  "api_financials": {
+    "revenue": "50,010 Crore",
+    "ebitda": "10,101 Crore",
+    "net_income": "8,151 Crore",
+    "employee_cost": "1,577"
+  },
+  "labour_code_impact": {
+    "provision_amount": "61 crores",
+    "impact_description": "one-time exceptional charge towards the past service cost arising from the changes introduced under the new labour code. This is essentially towards gratuity.",
+    "fiscal_period": "Q3"
+  },
+  "business_intel": null,
+  "vendors": [
+    "Refer to Annual Report Note: Related Party Disclosures"
+  ],
+  "Company": "Bajaj Auto Ltd",
+  "Period": "FY2024-25",
+  "Risk Score": "Medium",
+  "Labour_Provision": "61 crores",
+  "Labour_Provision_Desc": "one-time exceptional charge towards the past service cost arising from the changes introduced under the new labour code. This is essentially towards gratuity.",
+  "Top_Products": "N/A",
+  "Major_Customers": "N/A",
+  "Top_Vendors": "Refer to Annual Report Note: Related Party Disclosures",
+  "Wage_Status": "Compliant",
+  "Workforce_Turnover": "9.4%",
+  "Health_Status": "Compliant",
+  "Strike_Risk": "Compliant",
+  "Strategic_Action": "Enhance monitoring and reporting of human rights and environmental practices within the supply chain."
+}

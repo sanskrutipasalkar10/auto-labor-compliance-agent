@@ -1,0 +1,22 @@
+# --- System & Environment ---
+.ssh
+.env
+venv/
+node_modules/
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# --- Data Governance ---
+# Ignore heavy raw and intermediate files
+auto-labor-compliance-agent/data/01_raw/*
+auto-labor-compliance-agent/data/02_intermediate/*
+
+# Ensure folder structures are kept via .gitkeep
+!auto-labor-compliance-agent/data/01_raw/.gitkeep
+!auto-labor-compliance-agent/data/02_intermediate/.gitkeep
+
+# --- ALLOW THE STRUCTURED DATA ---
+# This ensures your JSON and PDF reports are pushed to GitHub
+!auto-labor-compliance-agent/data/03_structured/
+!auto-labor-compliance-agent/data/gold_standard/
