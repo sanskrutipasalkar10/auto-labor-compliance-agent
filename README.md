@@ -110,3 +110,14 @@ docker-compose up --build
 ## 🛡️ License & Contact
 Developed as part of the **AutoLabor Compliance** initiative. 
 For support or collaboration, please visit the [GitHub Repository](https://github.com/sanskrutipasalkar10/auto-labor-compliance-agent).
+
+
+<img width="1000" height="610" alt="image" src="https://github.com/user-attachments/assets/14dafacf-aa6c-46eb-a30d-a141bd4815da" />
+
+<img width="906" height="642" alt="image" src="https://github.com/user-attachments/assets/60204ffe-eb9f-4b89-a188-d00de2f65848" />
+
+<img width="968" height="519" alt="image" src="https://github.com/user-attachments/assets/00f6fa78-d904-4668-882e-2a2b844a4c3b" />
+
+<img width="908" height="495" alt="image" src="https://github.com/user-attachments/assets/c568ae7a-cbf7-4745-8b83-007ef852754c" />
+
+
